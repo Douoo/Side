@@ -1,0 +1,11 @@
+@import url("../styles/fonts.css");
+
+.root {
+    -fx-background-color: rgb(117, 117, 117);
+    -fx-font-family: "Abel";
+    -fx-font-size: 10pt;
+}
+.lable{
+    -fx-text-fill:w
+}
+

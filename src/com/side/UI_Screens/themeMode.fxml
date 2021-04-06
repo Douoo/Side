@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #393E46;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="57.0" prefWidth="200.0" style="-fx-background-color: #222831;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="18.0" prefWidth="100.0" style="-fx-font-weight: 900;" text="SETTINGS" textFill="#00adb5">
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <ImageView fx:id="exitFromSettingButton" accessibleRole="BUTTON" fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="74.0" top="15.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@image/Component%201%20–%201@2x.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="143.0" prefWidth="132.0" BorderPane.alignment="CENTER">
+         <children>
+            <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="122.0" style="-fx-font-weight: 900;" text="DARK MODE" textFill="#00adb5">
+               <VBox.margin>
+                  <Insets left="10.0" top="15.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-font-weight: 900;" text="LIGHT MODE" textFill="#00adb5">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

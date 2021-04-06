@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.side.Controller"
+            prefHeight="400.0" prefWidth="600.0">
+        <!--    <headerText>-->
+        <!--        Add your todo item-->
+        <!--    </headerText>-->
+        <!--    <content>-->
+        <!--        <Pane>-->
+        <TextArea fx:id="detailTextArea" wrapText="true"/>
+        <!--        </Pane>-->
+        <!--    </content>-->
+
+</AnchorPane>

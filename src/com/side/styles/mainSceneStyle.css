@@ -1,0 +1,69 @@
+/*@import url("../styles/fonts.css");*/
+
+.root {
+    -fx-background-color: rgb(36, 36, 36);  
+    -fx-font-family: "cursive";
+    -fx-font-size: 12pt;
+    -fx-fill: white;
+
+}
+
+.nav-pane {
+    -fx-background-color: rgb(117, 117, 117);
+}
+.main-body-pane{
+    -fx-background-color: rgb(36, 36, 36);  
+
+}
+
+
+.menu-bar{
+    -fx-background-color: rgb(117, 117, 117);
+    -fx-font-family: "cursive";
+
+    -fx-font-size: 9pt;
+    -fx-border:none; 
+  
+
+}
+
+.clip-tools {
+    -fx-fill:transparent;
+    -fx-opacity:0.80;
+}
+
+.tools:hover{
+    -fx-opacity:0.60;
+    -fx-cursor:hand;
+}
+
+.clip-text{
+    -fx-fill: white;
+    -fx-font-family: "Roboto Light";
+    -fx-font-size: 14px;
+}
+
+.clip-pane{
+    -fx-pref-height: 146;
+    -fx-pref-width: 522;
+    -fx-background-color: rgb(51, 51, 51);
+    -fx-border-width: 3px 0px 0px 0px;
+    -fx-border-color: rgb(0, 173, 181);
+    -fx-margin:30px;
+    -fx-fill: white;
+    /*-fx-background-radius: 5px;*/
+    /*-fx-cursor:hand;*/
+
+}
+
+.clip-content-body{
+    -fx-background-color:  #333333;
+    -fx-font-family: "cursive";
+    -fx-font-size: 9pt;
+}
+
+.toc{
+    -fx-font-size: 7pt;
+    -fx-font-style:italic;
+    -fx-fill: white;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="181.0" prefWidth="477.0" style="-fx-background-color: rgb(35,35,35);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.side.UI_Controllers.DialogController">
+<!--    <headerText>-->
+<!--        Add your todo item-->
+<!--    </headerText>-->
+<!--    <content>-->
+<!--        <Pane>-->
+            <TextArea fx:id="detailTextArea" layoutY="50.0" prefHeight="131.0" prefWidth="477.0" promptText="Enter Your Note Here" style="-fx-control-inner-background: rgb(57, 62, 70);" wrapText="true" />
+<!--        </Pane>-->
+<!--    </content>-->
+</Pane>

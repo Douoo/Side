@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="599.0" style="-fx-background-color: #393E46;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.side.Controller">
+   <top>
+      <BorderPane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #222831;" BorderPane.alignment="CENTER">
+         <left>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #222831;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="addButton" accessibleRole="BUTTON" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addNote" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Add%20Button@2x.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children></HBox>
+         </left>
+         <right>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #222831;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="minimizeButton" accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#minimizeClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Ellipse%201@2x.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="200.0" right="5.0" top="15.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="exitButton" accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#closeClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Ellipse%202@2x.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+         </right>
+         <center>
+            <Label fx:id="title" prefHeight="47.0" prefWidth="159.0" text="SIDE" textFill="#00adb5" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </Label>
+         </center>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </BorderPane>
+   </top>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <center>
+      <ScrollPane fx:id="clipScrollpane" hbarPolicy="NEVER" prefHeight="335.0" prefWidth="591.0" style="-fx-background-color: #393E46;" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+         <content>
+            <TabPane fx:id="allTabPane" prefHeight="280.0" prefWidth="598.0" side="BOTTOM" style="-fx-background-color: #393E46;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="noteTabPane" closable="false" style="-fx-background-color: #393E46; -fx-text-fill: #00adb5;" text="Note">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                <Tab text="Untitled Tab 2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <HBox alignment="TOP_RIGHT" prefHeight="8.0" prefWidth="597.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="clearNote" mnemonicParsing="false" onMouseClicked="#clearPane" prefHeight="39.0" prefWidth="60.0" style="-fx-background-color: #222831;" text="Clear All" textFill="#00adb5">
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="clipBoardList" accessibleRole="BUTTON" fitHeight="28.0" fitWidth="15.0" onMouseClicked="#filterNoteList" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Icon%20awesome-clipboard-list.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <VBox fx:id="allNotePane" alignment="TOP_CENTER" prefHeight="323.0" prefWidth="597.0" spacing="18.0" style="-fx-background-color: #393E46;" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
